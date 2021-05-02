@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
 
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 23
     }
     lintOptions {
-          abortOnError false
+        abortOnError false
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -25,12 +25,12 @@ dependencies {
     compile 'com.android.support:support-v4:23.2.0'
 }
 
-publish {
-    userOrg = 'flipboard'
-    groupId = 'com.flipboard'
-    artifactId = 'bottomsheet-core'
-    publishVersion = VERSION
-    description = 'Android component which presents a dismissible view from the bottom of the screen'
-    website = 'https://github.com/Flipboard/bottomsheet'
-    licences = ['BSD 3-Clause']
-}
+//publish {
+//    userOrg = 'flipboard'
+//    groupId = 'com.flipboard'
+//    artifactId = 'bottomsheet-core'
+//    publishVersion = VERSION
+//    description = 'Android component which presents a dismissible view from the bottom of the screen'
+//    website = 'https://github.com/Flipboard/bottomsheet'
+//    licences = ['BSD 3-Clause']
+//}
